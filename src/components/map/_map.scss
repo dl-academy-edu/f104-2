@@ -1,0 +1,62 @@
+.map {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 426px;
+  background-image: url(/static/images/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__contacts {
+    padding: 50px 44px 26px;
+    background-color: #008752;
+    max-width: 380px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+  }
+
+  &__address {
+    margin-top: 17px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+
+  &__phone {
+    display: inline-block;
+    margin-top: 23px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+}
+
+.map-block-inner {
+  
+}
+
+.map-block-
+
+.map-block-
+
+.map-block-
+
+.map-block-
+
+.map-block-phone:hover {
+  opacity: 0.7;
+}
+
+.map-block-phone:active {
+  opacity: 0.5;
+}
+
+.map-block-link {
+  margin-top: 23px;
+}

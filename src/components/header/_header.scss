@@ -1,24 +1,51 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
+.header {
   display: flex;
   align-items: center;
+  padding-top: 33px;
+  padding-bottom: 33px;
 
-  span {
-    padding-right: 20px;
+  &__list {
+    display: flex;
+    margin-left: 25px;
   }
 
-  a {
-    color: #000;
-    text-decoration: none;
+  &__item {
+    margin-right: 15px;
+  }
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+  &__link,
+  &__phone {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  
+  &__link {
+    color: #333333;
+
+    transition: color $duration linear;
     &:hover {
-      border-bottom: 1px solid #000;
+      color: #888888;
     }
+
+    &:active {
+      color: #aaaaaa;
+    }
+  }
+
+  &__phone {
+    margin-left: auto;
+    color: #95459A;
+
+    transition: color $duration linear;
+    &:hover {
+      color: #D665DD;
+    }
+    &:active {
+      color: #722A77;
+    }
+  }
+  &__link-contact {
+    margin-left: 25px;
   }
 }
-
-

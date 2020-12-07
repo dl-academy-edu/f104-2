@@ -1,0 +1,57 @@
+.body {
+  height: 100vh;
+  display: flex;
+}
+
+@keyframes anim {
+  from {
+  }
+  20% {
+    transform: translate(900%, 600%) rotate(0);
+  }
+  
+  40% {
+    transform: translate(900%, 0) rotate(0);
+  }
+  
+  60% {
+    transform: translate(0, 0) rotate(0);
+  }
+  to {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+.box {
+  margin: auto;
+  width: 700px;
+  height: 500px;
+  border:  black 1px solid;
+
+  &__item {
+    width: 10%;
+    height: 10%;
+    border:  red 1px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    animation: anim 3s linear forwards infinite;
+
+    &:nth-child(2) {
+      border-color: blue;
+    }
+    &:nth-child(3) {
+      border-color: green;
+    }
+    &:nth-child(4) {
+      border-color: pink;
+    }
+    &:nth-child(5) {
+      animation: initial;
+    }
+  }
+}

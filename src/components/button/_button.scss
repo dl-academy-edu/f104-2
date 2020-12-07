@@ -1,0 +1,45 @@
+.button {
+  display: inline-block;
+
+  padding: 11px 40px;
+
+  min-width: 180px;
+  border: none;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: #ffffff;
+  background-color: #008752;
+
+  cursor: pointer;
+  transition: background-color $duration linear;
+
+  &:hover {
+    background-color: #26CD8B;
+  }
+
+  &:active {
+    background-color: #005232;
+  }
+
+  &_purpure {
+    background-color: #95459A;
+
+    &:hover {
+      background-color: #D665DD;
+    }
+
+    &:active {
+      background-color: #722A77;
+    }
+  }
+
+  &_big {
+    padding: 16px 55px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+

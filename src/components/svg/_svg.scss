@@ -1,0 +1,32 @@
+.svg-icon {
+  height: auto;
+  cursor: pointer;
+  &__eye {
+    transition: transform $duration;
+  }
+  &__eyebrow {
+    transition: transform $duration;
+  }
+  &:hover {
+    .svg-icon__eye {
+      transform: translateY(2px);
+    }
+    .svg-icon__eyebrow_left {
+      transform: translateY(-1px);
+    }
+  }
+  &:active {
+    .svg-icon__eye {
+      transform: translate(-1px, -2px);
+    }
+    .svg-icon__eye_left {
+      transform: translate(-5px, -2px);
+    }
+    .svg-icon__eyebrow {
+      transform: translateY(-2px);
+    }
+    .svg-icon__eyebrow_left {
+      transform: translateY(0);
+    }
+  }
+}

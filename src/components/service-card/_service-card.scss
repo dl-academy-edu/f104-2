@@ -1,0 +1,20 @@
+.services-card {
+  overflow: hidden;
+  &__title {
+    margin-top: 16px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2C3036;
+  }
+
+  &__description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
+  }
+
+  &__link {
+    margin-top: 20px;
+  }
+}

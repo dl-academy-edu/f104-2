@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Каталог</title>
+</head>
+
+<body>
+    @@include('header/index.html')
+    <main class="container contact-us">
+        <h1 class="contact-us__title">Contact Us</h1>
+        <form class="contact-us__form">
+
+            <div class="row row_two">
+                <div class="row__col">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" type="text" placeholder="Ivan Ivanov" id="name">
+                </div>
+
+                <div class="row__col">
+                    <label class="form__label" for="phone">Phone</label>
+                    <input class="form__input" type="text" id="phone">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row__col">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="email" id="email">
+                </div>
+            </div>
+
+            <div class="form__group">
+                <p class="form__group-title">Payment Methods</p>
+
+                <div class="form__group-list">
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="checkbox" id="cash">
+                        <label class="radio__label" for="cash">Cash</label>
+                    </div>
+
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="checkbox" id="credit-cart">
+                        <label class="radio__label" for="credit-cart">Сredit Сard</label>
+                    </div>
+
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="checkbox" id="receipt" disabled>
+                        <label class="radio__label" for="receipt">Receipt</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row__col">
+                    <label class="form__label" for="city-of-birth">City of Birth</label>
+                    <input class="form__input" type="text" id="city-of-birth">
+                </div>
+            </div>
+
+            <div class="inputs-group">
+                <p class="inputs-group-title">Do you need a report on the services provided?</p>
+
+                <div class="form__radio-list">
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="radio" id="is-report-yes" name="report"
+                            checked>
+                        <label class="radio__label radio__label_circle" for="is-report-yes">Yes</label>
+                    </div>
+
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="radio" id="is-report-no" name="report">
+                        <label class="radio__label radio__label_circle" for="is-report-no">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row__col">
+                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__input" id="message"></textarea>    
+                </div>
+            </div>
+
+            <button class="button contact-us-page-button">SUBMIT</button>
+        </form>
+    </main>
+    @@include("map/index.html")
+    @@include('footer/index.html')
+    <script src="index.js"></script>
+</body>
+
+</html>
