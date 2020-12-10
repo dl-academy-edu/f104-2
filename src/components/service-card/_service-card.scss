@@ -16,5 +16,8 @@
 
   &__link {
     margin-top: 20px;
+    @media screen and (max-width: $md) {
+      min-width: initial;
+    }
   }
 }

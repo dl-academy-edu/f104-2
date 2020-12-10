@@ -6,7 +6,11 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 25px;
+    @media screen and (max-width: $xl) {
+      margin-left: 15px;
+    }
   }
 
   &__item {
@@ -48,4 +52,81 @@
   &__link-contact {
     margin-left: 25px;
   }
+
+  &__logo {
+    display: block;
+    @media screen and (max-width: $xl) {
+      max-width: 97px;
+    }
+  }
+}
+
+.mobile-header {
+  display: none;
+  @media screen and (max-width: $md) {
+    display: block;
+  }
+
+  &__content {
+    // padding: 5px 20px 50px 20px;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #EEEEEE;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  &__wraper {
+    // padding: 5px 20px 50px 20px;
+    height: 100%;
+  }
+
+  &::before {
+    background-color: rgba(149, 69, 154, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  &_open {
+    &::before {
+      content: "";
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  &__phone {
+    display: block;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #95459A;
+  }
+
+  &__link-contact {
+    min-width: 247px;
+  }
+
 }

@@ -1,3 +1,6 @@
+@import "./../../components/vars";
+
+
 // about-block
 .about {
   padding-top: 143px;
@@ -28,10 +31,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 40px -10px -10px;
+  @media screen and (max-width: $md) {
+    margin-top: 35px;
+  }
 
   &__item {
     padding: 10px;
     width: 25%;
+    @media screen and (max-width: $md) {
+      width: 50%;
+    }
   }
 }
 
@@ -46,6 +55,16 @@
     font-size: 42px;
     line-height: 50px;
     color: #00559D;
+
+    @media screen and (max-width: $lg) {
+      font-size: 36px;
+      line-height: 43px;
+    }
+    
+    @media screen and (max-width: $md) {
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 }
 
@@ -57,9 +76,19 @@
   margin-top: 110px;
   margin-bottom: 106px;
 
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+  }
   &__content {
-    width: calc(100% / 12 * 5);
+    width: 100% / 12 * 5;
     margin-top: 7px;
+    
+    @media screen and (max-width: $md) {
+      order: 2;
+      width: 100%;
+    }
   }
 
   &__title {
@@ -67,6 +96,14 @@
     font-size: 72px;
     line-height: 72px;  
     color: #005DAB;
+    @media screen and (max-width: $lg) {
+      font-size: 48px;
+      line-height: 48px;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 36px;
+      line-height: 39px;
+    }
   }
 
   &__description {
@@ -75,6 +112,18 @@
     font-size: 18px;
     line-height: 28px;
     color: #000000;
+    @media screen and (max-width: $lg) {
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 34px;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 14px;
+      line-height: 22px;
+      max-width: initial;
+      margin-top: 24px;
+    }
+
   }
 
   &__link {
@@ -84,16 +133,11 @@
   &__image-wrapper {
     position: relative;
     width: calc(50% - 10px);
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: -110px;
-      top: 30px;
-      z-index: -1;
-      width: calc(100% - 10px);
-      height: calc(100% + 70px);
-      background-color: #008752;
+    box-shadow: 110px 99px 0px 0px rgba(0,135,82,1);
+    @media screen and (max-width: $md) {
+      box-shadow: 20px 20px 0px 0px rgba(0,135,82,1);
+      width: 100%;
+      margin-bottom: 17px;
     }
 
     &::after {

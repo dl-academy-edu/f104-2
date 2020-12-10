@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5, h6, p {
   padding-right: 110px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: $xl) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .visibility-hidden {
@@ -50,10 +55,10 @@ img {
 @import "./form";
 
 // Подключение компонентов
+@import "./button/button";
+@import "./svg/svg";
+@import "./chat/chat";
 @import "./header/header";
 @import "./footer/footer";
-@import "./button/button";
 @import "./map/map";
-@import "./chat/chat";
-@import "./svg/svg";
 @import "./service-card/service-card";

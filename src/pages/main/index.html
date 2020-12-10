@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="/static/fonts/oswald.css" />
   <link rel="stylesheet" href="/static/fonts/stylesheet.css" />
   <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
 </head>
 
 <body>
-  @@include("header/index.html")
+  <!-- @@include("header/index.html") -->
   <main>
-    <section class="about">
+    <!-- <section class="about">
       <div class="about__inner container">
         <h1 class="about__title">The world’s leading cleaning company</h1>
         @@include("button/index.html", {
@@ -24,7 +25,7 @@
         "text": "GET A FREE ESTIMATE"
         })
       </div>
-    </section>
+    </section> -->
 
     <section aria-label="Services list" class="services container">
       <h2 class="services__title">OUR MOST POPULAR SERVICES</h2>
@@ -83,7 +84,7 @@
       </div>
     </article>
 
-    <section class="partners container">
+    <!-- <section class="partners container">
       <h2 class="partners__title visibility-hidden">Pertners</h2>
       <ul class="partners__list">
         <li class="partner">
@@ -141,10 +142,10 @@
           </a>
         </li>
       </ul>
-    </section>
+    </section> -->
   </main>
-  @@include("map/index.html")
-  @@include("footer/index.html")
+  <!-- @@include("map/index.html")
+  @@include("footer/index.html") -->
   <div class="popup">
     <form class="form form_mini">
       <button type="button" class="popup__button-close popup-form-button-close_js">
@@ -179,7 +180,6 @@
       <button class="button form__button-submit">SUBMIT</button>
     </form>
   </div>
-  @@include('chat/index.html')
   <script src="scripts.js"></script>
 </body>
 
