@@ -34,28 +34,51 @@
           @@include("service-card/index.html", {
           "title": "123123213123213213123213213 21 321 321 3213213",
           "text": "text texttext text text text",
-          "img": "1.jpg"
+          "img": "1.jpg?123123",
+          "img2x": "1-2x.jpg?123123",
+          "imgTablet": "1-tablet.jpg",
+          "imgTablet2x": "1-tablet-2x.jpg",
+          "imgMobile": "1-mobile.jpg",
+          "imgMobile2x": "1-mobile-2x.jpg"
           })
         </li>
         <li class="grid-list__item">
           @@include("service-card/index.html", {
           "title": "123 21 321 321 3213213",
           "text": "text texttext text text text",
-          "img": "1.jpg"
+          "img": "2.jpeg",
+          "img": "1.jpg?123123",
+          "img2x": "1-2x.jpg?123123",
+          "imgTablet": "1-tablet.jpg",
+          "imgTablet2x": "1-tablet-2x.jpg",
+          "imgMobile": "1-mobile.jpg",
+          "imgMobile2x": "1-mobile-2x.jpg"
           })
         </li>
         <li class="grid-list__item">
           @@include("service-card/index.html", {
           "title": "123 21 321 321 3213213",
           "text": "text texttext text text text",
-          "img": "1.jpg"
+          "img": "1.jpg",
+          "img": "1.jpg?123123",
+          "img2x": "1-2x.jpg?123123",
+          "imgTablet": "1-tablet.jpg",
+          "imgTablet2x": "1-tablet-2x.jpg",
+          "imgMobile": "1-mobile.jpg",
+          "imgMobile2x": "1-mobile-2x.jpg"
           })
         </li>
         <li class="grid-list__item">
           @@include("service-card/index.html", {
           "title": "123 21 321 321 3213213",
           "text": "text texttext text text text",
-          "img": "1.jpg"
+          "img": "1.jpg",
+          "img": "1.jpg?123123",
+          "img2x": "1-2x.jpg?123123",
+          "imgTablet": "1-tablet.jpg",
+          "imgTablet2x": "1-tablet-2x.jpg",
+          "imgMobile": "1-mobile.jpg",
+          "imgMobile2x": "1-mobile-2x.jpg"
           })
         </li>
       </ul>
@@ -80,11 +103,18 @@
           })
       </div>
       <div class="why-us__image-wrapper">
-        <img src="/static/images/why-us.jpg" alt="Why us image" class="why-us__image" width="580" height="430">
+        <picture>
+          <source srcset="/static/images/why-us-mobile.jpg, /static/images/why-us-mobile-2x.jpg 2x"
+            media="(max-width: 768px)">
+          <source srcset="/static/images/why-us-tablet.jpg, /static/images/why-us-tablet-2x.jpg 2x"
+            media="(max-width: 1024px)">
+          <img class="why-us__image" src="/static/images/why-us.jpg"
+            srcset="/static/images/why-us.jpg, /static/images/why-us-2x.jpg 2x" alt="Main image" alt="Why us image">
+        </picture>
       </div>
     </article>
 
-    <!-- <section class="partners container">
+    <section class="partners container">
       <h2 class="partners__title visibility-hidden">Pertners</h2>
       <ul class="partners__list">
         <li class="partner">
@@ -93,56 +123,56 @@
             <img class="partner__img" src="/static/images/partners/1.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/2.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/3.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/4.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/5.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/6.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/7.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/8.png" alt="Partners image">
           </a>
         </li>
-        <li class="partners-block-item">
+        <li class="partner">
           <a href="#" class="partner__link">
             <span class="visibility-hidden">Follow to partner</span>
             <img class="partner__img" src="/static/images/partners/9.png" alt="Partners image">
           </a>
         </li>
       </ul>
-    </section> -->
+    </section>
   </main>
   <!-- @@include("map/index.html")
   @@include("footer/index.html") -->

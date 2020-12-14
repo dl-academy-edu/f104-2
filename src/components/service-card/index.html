@@ -1,5 +1,14 @@
 <div class="services-card">
-  <img src="/static/images/services/@@img" alt="Service image" class="services-block-item-image">
+  <div class="services-card__img-wrapper">
+    <picture>
+      <source srcset="/static/images/services/@@imgMobile, /static/images/services/@@imgMobile2x 2x"
+        media="(max-width: 526px)">
+      <source srcset="/static/images/services/@@imgTablet, /static/images/services/@@imgTablet2x 2x"
+        media="(max-width: 768px)">
+      <img class="services-card__img" src="/static/images/services/@@img"
+        srcset="/static/images/services/@@img, /static/images/services/@@img2x 2x" alt="Main image">
+    </picture>
+  </div>
   <h3 class="services-card__title">@@title</h3>
   <p class="services-card__description">@@text</p>
   <a href="#" class="button services-card__link">LEARN MORE</a>
