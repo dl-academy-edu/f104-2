@@ -1,57 +1,92 @@
-.body {
-  height: 100vh;
-  display: flex;
-}
+@import "./../../components/vars";
 
-@keyframes anim {
-  from {
-  }
-  20% {
-    transform: translate(900%, 600%) rotate(0);
-  }
-  
-  40% {
-    transform: translate(900%, 0) rotate(0);
-  }
-  
-  60% {
-    transform: translate(0, 0) rotate(0);
-  }
-  to {
-    transform: translate(0, 0) rotate(360deg);
-  }
-}
 
-.box {
-  margin: auto;
-  width: 700px;
-  height: 500px;
-  border:  black 1px solid;
+.grid {
+  display: grid;
+  height: 900px;
+  // grid-template-columns: repeat(10, 1fr);
+  // grid-template-rows: repeat(6, 1fr); 
 
-  &__item {
-    width: 10%;
-    height: 10%;
-    border:  red 1px solid;
-
+  grid-template-areas: 
+    "a a a a a b b b b b"
+    "a a a a a b b b b b"
+    "c c d d d d d e e e"
+    "f f f f f f f e e e"
+    "f f f f f f f e e e";
+    
+    @media screen and (max-width: $lg) {
+      grid-template-areas: 
+        "b b b b a a a"
+        "b b b b a a a"
+        "e e e c c c c"
+        "e e e d d d d"
+        "e e e d d d d"
+        "e e e d d d d"
+        "f f f f f f f"
+        "f f f f f f f"
+        "f f f f f f f";
+        height: 1350px;
+    }
+    
+    @media screen and (max-width: $md) {
+      grid-template-areas: 
+        "a a a a a b b b b b"
+        "a a a a a b b b b b"
+        "c c d d d d d e e e"
+        "f f f f f f f e e e"
+        "f f f f f f f e e e";
+    }
+  &__A322F1 {
+    grid-area: a;
+    background-color: #A322F1;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #FFFFFF;
+  }
 
-    font-size: 25px;
+  &__C4C4C4 {
+    grid-area: b;
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
 
-    animation: anim 3s linear forwards infinite;
+  &__22CCF1 {
+    grid-area: c;
+    background-color: #22CCF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
 
-    &:nth-child(2) {
-      border-color: blue;
-    }
-    &:nth-child(3) {
-      border-color: green;
-    }
-    &:nth-child(4) {
-      border-color: pink;
-    }
-    &:nth-child(5) {
-      animation: initial;
-    }
+  &__F19E22 {
+    grid-area: d;
+    background-color: #F19E22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+
+  &__EF6A6A {
+    grid-area: e;
+    background-color: #EF6A6A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+
+  &__008752 {
+    grid-area: f;
+    background-color: #008752;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
   }
 }

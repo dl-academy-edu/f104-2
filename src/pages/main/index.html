@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!-- @@include("header/index.html") -->
+  @@include("header/index.html")
   <main>
     <!-- <section class="about">
       <div class="about__inner container">
@@ -29,8 +29,8 @@
 
     <section aria-label="Services list" class="services container">
       <h2 class="services__title">OUR MOST POPULAR SERVICES</h2>
-      <ul class="grid-list">
-        <li class="grid-list__item">
+      <ul class="row">
+        <li class="col-6 col-md-3">
           @@include("service-card/index.html", {
           "title": "123123213123213213123213213 21 321 321 3213213",
           "text": "text texttext text text text",
@@ -42,7 +42,7 @@
           "imgMobile2x": "1-mobile-2x.jpg"
           })
         </li>
-        <li class="grid-list__item">
+        <li class="col-6 col-md-3">
           @@include("service-card/index.html", {
           "title": "123 21 321 321 3213213",
           "text": "text texttext text text text",
@@ -55,7 +55,7 @@
           "imgMobile2x": "1-mobile-2x.jpg"
           })
         </li>
-        <li class="grid-list__item">
+        <li class="col-6 col-md-3">
           @@include("service-card/index.html", {
           "title": "123 21 321 321 3213213",
           "text": "text texttext text text text",
@@ -68,7 +68,7 @@
           "imgMobile2x": "1-mobile-2x.jpg"
           })
         </li>
-        <li class="grid-list__item">
+        <li class="col-6 col-md-3">
           @@include("service-card/index.html", {
           "title": "123 21 321 321 3213213",
           "text": "text texttext text text text",
@@ -174,8 +174,8 @@
       </ul>
     </section>
   </main>
-  <!-- @@include("map/index.html")
-  @@include("footer/index.html") -->
+  @@include("map/index.html")
+  @@include("footer/index.html")
   <div class="popup">
     <form class="form form_mini">
       <button type="button" class="popup__button-close popup-form-button-close_js">

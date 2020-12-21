@@ -1,0 +1,60 @@
+$columnCount: 12;
+$gap: 20px;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($gap/2);
+  margin-right: -($gap/2);
+}
+
+.col {
+  width: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@for $i from 1 through $columnCount {
+  .col-#{$i} {
+    width: (100% / 12) * $i;
+  }  
+  .add-#{$i} {
+    margin-right: (100%/12)*$i;
+  }
+  .skip-#{$i} {
+    margin-left: (100%/12)*$i;
+  }
+}
+@for $i from 1 through $columnCount {
+  @include media-interval($sm, 0) {
+    .col-md-#{$i} {
+      width: (100% / 12) * $i;
+    }  
+    .add-md-#{$i} {
+      margin-right: (100%/12)*$i;
+    }
+    .skip-md-#{$i} {
+      margin-left: (100%/12)*$i;
+    }
+  }
+}
+@for $i from 1 through $columnCount {
+  @include media-interval($lg, 0) {
+    .col-xl-#{$i} {
+      width: (100% / 12) * $i;
+    }  
+    .add-xl-#{$i} {
+      margin-right: (100%/12)*$i;
+    }
+    .skip-xl-#{$i} {
+      margin-left: (100%/12)*$i;
+    }
+  }
+}
+
+
+
+[class*="col"] {
+  padding-left: $gap/2;
+  padding-right: $gap/2;
+}

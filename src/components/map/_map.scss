@@ -1,17 +1,24 @@
 .map {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  min-height: 426px;
-  background-image: url(/static/images/map.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  // background-image: url(/static/images/map.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 
+  position: relative;
+
+  &__google {
+    width: 100%;
+    display: block;
+    min-height: 426px;
+  }
   &__contacts {
     padding: 50px 44px 26px;
     background-color: #008752;
     max-width: 380px;
+    position: absolute;
+    top: 120px;
   }
+
 
   &__title {
     font-weight: 900;
